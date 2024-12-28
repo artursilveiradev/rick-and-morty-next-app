@@ -11,6 +11,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "neon-green": "var(--neon-green)",
+        gray: "var(--gray)",
+      },
+      fontFamily: {
+        bungee: "var(--font-bungee)",
+        orbitron: "var(--font-orbitron)",
+        roboto: "var(--font-roboto)",
+        vt323: "var(--font-vt323)",
       },
     },
   },
