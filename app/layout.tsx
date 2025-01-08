@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Bungee, Orbitron, Roboto, VT323 } from "next/font/google";
+import Providers from "./providers";
 import "./globals.css";
 
 const bungee = Bungee({
@@ -37,7 +38,7 @@ export default function RootLayout({
       <body
         className={`${bungee.variable} ${orbitron.variable} ${roboto.variable} ${vt323.variable} antialiased`}
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
