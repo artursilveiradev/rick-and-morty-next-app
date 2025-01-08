@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
       {
         hostname: "rickandmortyapi.com",
       },
+      {
+        hostname: "placehold.co",
+      },
     ],
   },
 };
