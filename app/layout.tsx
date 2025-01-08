@@ -4,21 +4,25 @@ import Providers from "./providers";
 import "./globals.css";
 
 const bungee = Bungee({
+  subsets: ["latin"],
   variable: "--font-bungee",
   weight: "400",
 });
 
 const orbitron = Orbitron({
+  subsets: ["latin"],
   variable: "--font-orbitron",
   weight: ["400", "500", "700"],
 });
 
 const roboto = Roboto({
+  subsets: ["latin"],
   variable: "--font-roboto",
   weight: ["400", "500", "700"],
 });
 
 const vt323 = VT323({
+  subsets: ["latin"],
   variable: "--font-vt323",
   weight: "400",
 });
