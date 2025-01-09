@@ -28,7 +28,7 @@ const vt323 = VT323({
 });
 
 export const metadata: Metadata = {
-  title: "Rick and Morty Next.js App",
+  title: "Rick and Morty Next.js app",
   description: "A Next.js app that uses the Rick and Morty GraphQL API",
 };
 
