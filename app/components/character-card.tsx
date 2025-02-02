@@ -37,23 +37,23 @@ export default function CharacterCard(props: CharacterCardProps) {
       </div>
       <div className="flex w-2/3 flex-col justify-between p-4">
         <h2 className="mb-2 font-bungee text-xl">{name}</h2>
-        <div className="flex items-center gap-1">
+        <div className="flex gap-1">
           <span className="font-bold">Species:</span>
           <span>{species ? species : "unknown"}</span>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex gap-1">
           <span className="font-bold">Gender:</span>
           <span>{gender ? gender : "unknown"}</span>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex gap-1">
           <span className="font-bold">Location:</span>
           <span>{locationName ? locationName : "unknown"}</span>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex gap-1">
           <span className="font-bold">Episode count:</span>
           <span>{episodeCount ? episodeCount : "unknown"}</span>
         </div>
-        <div className="flex items-center gap-1">
+        <div className="flex gap-1">
           <span className="font-bold">Status:</span>
           <span>{status ? status : "unknown"}</span>
         </div>
