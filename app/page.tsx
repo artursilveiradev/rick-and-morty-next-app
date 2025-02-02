@@ -33,7 +33,7 @@ export default function Home() {
     return (
       <Container>
         <Header />
-        <div className="flex h-80 items-center justify-center">
+        <div className="flex flex-1 items-center justify-center">
           <p className="text-lg font-bold">Loading ⏳</p>
         </div>
         <Footer />
@@ -45,7 +45,7 @@ export default function Home() {
     return (
       <Container>
         <Header />
-        <div className="flex h-80 items-center justify-center">
+        <div className="flex flex-1 items-center justify-center">
           <p className="text-lg font-bold">Something went wrong 😭</p>
         </div>
         <Footer />
