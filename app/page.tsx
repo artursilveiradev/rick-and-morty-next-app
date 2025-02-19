@@ -27,14 +27,14 @@ const GET_CHARACTERS = gql(`
 `);
 
 export default function Home() {
-  const { loading, error, data } = useQuery(GET_CHARACTERS);
+  const { loading, error, data, refetch } = useQuery(GET_CHARACTERS);
 
   if (loading) {
     return (
       <Container>
         <Header />
         <div className="flex flex-1 items-center justify-center">
-          <p className="text-lg font-bold">Loading ⏳</p>
+          <div className="loader" />
         </div>
         <Footer />
       </Container>
@@ -46,7 +46,16 @@ export default function Home() {
       <Container>
         <Header />
         <div className="flex flex-1 items-center justify-center">
-          <p className="text-lg font-bold">Something went wrong 😭</p>
+          <p className="text-2xl font-bold">
+            <span>Something went wrong.</span> <span>Please</span>{" "}
+            <span
+              className="cursor-pointer underline"
+              onClick={() => refetch()}
+            >
+              try again
+            </span>
+            <span>.</span>
+          </p>
         </div>
         <Footer />
       </Container>
