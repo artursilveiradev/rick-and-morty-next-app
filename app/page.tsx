@@ -45,7 +45,7 @@ export default function Home() {
     return (
       <Container>
         <Header />
-        <div className="flex flex-1 items-center justify-center">
+        <div className="flex flex-1 items-center justify-center text-center">
           <p className="text-2xl font-bold">
             <span>Something went wrong.</span> <span>Please</span>{" "}
             <span
